@@ -4,21 +4,22 @@ namespace slide2_e1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.WriteLine("\nCálculo de Potência");
+
             double b = 0, e = 0, r = 0;
-            Console.WriteLine("Slide 02 - Exercício 01");
 
-            Console.WriteLine("Informe a base: ");
-            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a base da potência: ");
+            b = int.Parse(Console.ReadLine()); //TypeCast
 
-            Console.WriteLine("Informe o expoente: ");
-            e = int.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o expoente da potência: ");
+            e = int.Parse(Console.ReadLine()); //TypeCast
 
-            //Cálculo
+            //Calcular a Potência
             r = Math.Pow(b, e);
 
-            Console.WriteLine($"Resultado: {r}");
+            Console.WriteLine($"O resultado da potência é: {r} !");
         }
     }
 }
