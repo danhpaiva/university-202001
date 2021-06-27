@@ -33,7 +33,8 @@ If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
 The following tools were used in the construction of the project:
 
-- IDE - <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+- IDE - <a href="https://code.visualstudio.com/download">Visual Studio Code</a> | <a href="https://visualstudio.microsoft.com/pt-br/downloads/">Visual Studio 2019</a>
+- SDK - <a href="https://dotnet.microsoft.com/download/dotnet/5.0">.Net 5</a>
 
 <h2 id=autor>:grin: Author</h2>
 
