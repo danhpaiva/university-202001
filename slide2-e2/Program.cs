@@ -6,20 +6,16 @@ namespace slide2_e2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\nCálculo da Área do Triângulo");
+            Console.WriteLine("\nCalculation of the Triangle Area");
 
-            double b = 0, a = 0, r = 0;
+            Console.WriteLine("\tInform the base of the triangle: ");
+            double baseTriangle = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("\tInforme a base do triângulo: ");
-            b = double.Parse(Console.ReadLine());
+            Console.WriteLine("\tEnter the height of the triangle: ");
+            double heightTriangle = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("\tInforme a altura do triângulo: ");
-            a = double.Parse(Console.ReadLine());
-
-            //Cálculo
-            r = (b * a) / 2;
-
-            Console.WriteLine($"\tO resultado da área é: {r} !");
+            double result = (baseTriangle * heightTriangle) / 2;
+            Console.WriteLine($"\tThe result of the triangle area is: {result} !");
         }
     }
 }
