@@ -8,16 +8,12 @@ namespace slide2_e1
         {
             Console.WriteLine("\nCalculating the Math Power of a Number");
 
-            double basePower = 0, exponent = 0, result = 0;
-
             Console.WriteLine("Inform the power base: ");
-            basePower = int.Parse(Console.ReadLine()); //TypeCast
-
+            double basePower = int.Parse(Console.ReadLine());
             Console.WriteLine("Inform the power exponent: ");
-            exponent = int.Parse(Console.ReadLine()); //TypeCast
+            double exponent = int.Parse(Console.ReadLine());
 
-            result = Math.Pow(basePower, exponent);
-
+            double result = Math.Pow(basePower, exponent);
             Console.WriteLine($"\nThe result of the potency is: {result} .");
         }
     }
