@@ -6,8 +6,4 @@
     <RootNamespace>e01_avulso</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>
