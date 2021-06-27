@@ -6,20 +6,19 @@ namespace slide2_e1
     {
         static void Main()
         {
-            Console.WriteLine("\nCálculo de Potência");
+            Console.WriteLine("\nCalculating the Math Power of a Number");
 
-            double b = 0, e = 0, r = 0;
+            double base_power = 0, exponent = 0, result = 0;
 
-            Console.WriteLine("Informe a base da potência: ");
-            b = int.Parse(Console.ReadLine()); //TypeCast
+            Console.WriteLine("Inform the power base: ");
+            base_power = int.Parse(Console.ReadLine()); //TypeCast
 
-            Console.WriteLine("Informe o expoente da potência: ");
-            e = int.Parse(Console.ReadLine()); //TypeCast
+            Console.WriteLine("Inform the power exponent: ");
+            exponent = int.Parse(Console.ReadLine()); //TypeCast
 
-            //Calcular a Potência
-            r = Math.Pow(b, e);
+            result = Math.Pow(base_power, exponent);
 
-            Console.WriteLine($"O resultado da potência é: {r} !");
+            Console.WriteLine($"\nThe result of the potency is: {result} .");
         }
     }
 }
