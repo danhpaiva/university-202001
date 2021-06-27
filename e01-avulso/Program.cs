@@ -6,28 +6,36 @@ namespace e01_avulso
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n\tLeitor de Endereços");
+            DataAddresses dataAddresses = new DataAddresses();
 
-            Console.WriteLine("\tInforme sua rua: ");
-            string rua = Console.ReadLine();
+            Console.WriteLine("\n\tAddress Reader");
 
-            Console.WriteLine("\tInforme o número da sua casa: ");
-            string numero = Console.ReadLine();
+            Console.WriteLine("\tInform your street: ");
+            dataAddresses.Road = Console.ReadLine();
 
-            Console.WriteLine("\tInforme seu bairro: ");
-            string bairro = Console.ReadLine();
+            Console.WriteLine("\tEnter your home number: ");
+            dataAddresses.HomeNumber = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("\tInforme sua cidade: ");
-            string cidade = Console.ReadLine();
+            Console.WriteLine("\tInform your neighborhood: ");
+            dataAddresses.District = Console.ReadLine();
 
-            Console.WriteLine("\tInforme seu estado: ");
-            string estado = Console.ReadLine();
+            Console.WriteLine("\tInform your city: ");
+            dataAddresses.City = Console.ReadLine();
 
-            Console.WriteLine("\tInforme seu país: ");
-            string pais = Console.ReadLine();
+            Console.WriteLine("\tInform your State: ");
+            dataAddresses.State = Console.ReadLine();
+
+            Console.WriteLine("\tEnter your country: ");
+            dataAddresses.Country = Console.ReadLine();
 
             Console.Clear();
-            Console.WriteLine($"\n\tSeu endereço é:\nRua: {rua} Número: {numero}\nBairro: {bairro}\nCidade:{cidade}\nEstado: {estado}\nPaís: {pais}");
+            Console.WriteLine($"\n\tYour address is:" +
+                $"\nStreet: {dataAddresses.Road}\n" +
+                $"Number: {dataAddresses.HomeNumber}\n" +
+                $"District: {dataAddresses.District}\n" +
+                $"City:{dataAddresses.City}\n" +
+                $"State: {dataAddresses.State}\n" +
+                $"Country: {dataAddresses.Country}");
         }
     }
 }
